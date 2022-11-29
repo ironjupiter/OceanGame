@@ -29,12 +29,18 @@ public class WaterDectection : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        start_timer = true;
+        if (col.transform.gameObject.layer == 4)
+        {
+            start_timer = true;
+        }
     }
     
     void OnTriggerExit2D(Collider2D col)
     {
-        in_water = false;
+        if (col.transform.gameObject.layer == 4)
+        {
+            in_water = false;
+        }
     }
     
     public bool getInWater()

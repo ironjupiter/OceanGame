@@ -29,13 +29,13 @@ public class SwimmingMovement : MonoBehaviour
     {
         if (this.transform.GetChild(0).GetComponent<WaterDectection>().getInWater() == false)
         {
-            Debug.Log("not in water");
+            //Debug.Log("not in water");
             return;
         }
         
         if (rigidbody.velocity.magnitude > velocity && this.transform.GetChild(0).GetComponent<WaterDectection>().getInWater())
         {
-            Debug.Log(rigidbody.velocity.magnitude);
+            //Debug.Log(rigidbody.velocity.magnitude);
             return;
         }
         
