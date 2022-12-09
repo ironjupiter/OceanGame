@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 158293358}
   - component: {fileID: 158293359}
   - component: {fileID: 158293361}
-  - component: {fileID: 158293360}
   m_Layer: 0
   m_Name: SpearGun
   m_TagString: Untagged
@@ -173,10 +172,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
-  kickback: 700
+  kickback: 2500
   fire_rate: 1
   chainlink: {fileID: 8835202296649962113, guid: 5936cca833bcb3d44b6247cc8eafe6ec, type: 3}
-  chainlength: 50
+  spearHead: {fileID: 1913940778018610091, guid: 12a766358d25816418717122e27c7379, type: 3}
+  chainlength: 10
+  chainMass: 5
 --- !u!212 &158293359
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -229,30 +230,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!233 &158293360
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158293356}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0.910326, y: -0.0039405823}
-  m_ConnectedAnchor: {x: -8.303674, y: 18.51606}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
 --- !u!50 &158293361
 Rigidbody2D:
   serializedVersion: 4
@@ -633,7 +610,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180511122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.65, y: 18.77, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
